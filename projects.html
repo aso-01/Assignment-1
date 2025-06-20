@@ -4,8 +4,38 @@
 	<meta charset="utf-8">
 	<title>Bender personal page</title>
 	<link rel="stylesheet" href="styles.css">
+<style>
+* {
+  box-sizing: border-box;
+}
+
+
+.header {
+  text-align: center;
+  padding: 32px;
+}
+
+/* Create two equal columns that floats next to each other */
+.column {
+  float: left;
+  width: 50%;
+  padding: 10px;
+}
+
+.column img {
+  margin-top: 12px;
+}
+
+/* Clear floats after the columns */
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+</style>
 </head>
 <body>
+<div class="menu">
 <ul>
 	<li><a href="home.html">Home</a></li>
 	<li><a href="about.html">About</a></li>
@@ -14,12 +44,17 @@
 	<li><a href="404 HTML Template.html">Blog</a></li> 
 	<li><a href="Contact.html">Contact</a></li> 
 </ul>
-<h1 id="txt_style">Some projects made by Bender Bending Rodriguez</h1>
-
-<img class="img_deg" src="Bender.jpg" alt="picture of Bender">
-<p>Bender Bending Rodríguez is one of the main characters in the animated television series Futurama. He was conceived by the series' creators Matt Groening and David X. Cohen, and is voiced by John DiMaggio. He fulfills a comic, antihero-type role in the show, and is described by fellow character Leela as an "alcoholic, whore-mongering, chain-smoking gambler". According to the character's backstory, 
-Bender was built in Tijuana, Mexico,
- his name a reference to bending in Mexican maquiladoras</p>
- </div>
+</div>
+<h1 id="txt_style">Main projects made by Bender Bending Rodriguez</h1>
+<div class="row"> 
+  <div class="column">
+  <a href="Plannet_Express.html"><img src="Planet_express.png" style="width:50%"></a>
+  <img src="Bender.jpg" style="width:100%">
+  </div>
+  <div class="column">
+  <img src="Bender.jpg" style="width:100%">
+  <img src="Bender.jpg" style="width:100%">
+  </div>
+ 
 </body>
 </html>

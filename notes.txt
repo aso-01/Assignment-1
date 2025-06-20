@@ -1,0 +1,7 @@
+https://www.w3schools.com/howto/howto_css_about_page.asp
+https://www.w3schools.com/howto/howto_css_contact_form.asp
+
+fom option
+https://www.w3schools.com/howto/howto_css_image_gallery.asp
+https://www.w3schools.com/howto/tryit.asp?filename=tryhow_css_image_overlay_opacity
+https://www.w3schools.com/howto/tryit.asp?filename=tryhow_css_image_gallery_scroll
