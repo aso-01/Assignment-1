@@ -1,16 +1,25 @@
 /* styles.css */
 
+  html, body {
+      height: 100%;
+      margin: 0;
+      display: flex;
+      flex-direction:column;
+      font-family: Arial, sans-serif;
+    }
 ul {
 	list-style-type: none;
 	margin: 0;
 	padding: 0;
-	overflow: hidden;
 	background-color: #333;
+	display: flex;
+}
+li{
+	flex:1 ;
 }
 li a
 {
 	display: block;
-	float: left;
 	color: white;
 	text-align: center;
 	padding: 14px 16px;
@@ -20,13 +29,21 @@ li a:hover
 {
 	background-color: #111;
 }	
+
+.active {
+	background-color: #04AA6D;
+}
 .img_deg
 {
 	float: right;
 	width: 50%;
+	margin-left: 20px;
+    margin-bottom: 10px;
+
 }
 .pos_cen
 {
+	flex: 1;
 	margin: 0 auto;
 	width: 70%;
 	padding: 20px;
@@ -35,6 +52,14 @@ li a:hover
 {
 	text-align:center;
 }
+footer {
+     text-align: center;
+     padding: 9px;
+     font-size: 0.9em;
+     color: #888;
+	 background-color: #f0f0f0;
+      
+    }
 
 input[type=text],
 select,
@@ -92,24 +117,5 @@ input[type=submit]:hover {
   background: #007bb5;
   color: white;
 }
-html, body {
-  height: 100%;
-  margin: 0;
-  display: flex;
-  flex-direction: column;
-}
 
-body {
-  flex: 1;
-}
 
-footer {
-  margin-top: auto;
-}
-	 footer {
-      text-align: center;
-      padding: 3px;
-      font-size: 0.9em;
-      color: #888;
-      
-    }
