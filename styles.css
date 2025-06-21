@@ -27,9 +27,9 @@ li a:hover
 }
 .pos_cen
 {
-	position: absolute;
+	margin: 0 auto;
 	width: 70%;
-	left: 10%;
+	padding: 20px;
 }
 #txt_style
 {
@@ -92,3 +92,24 @@ input[type=submit]:hover {
   background: #007bb5;
   color: white;
 }
+html, body {
+  height: 100%;
+  margin: 0;
+  display: flex;
+  flex-direction: column;
+}
+
+body {
+  flex: 1;
+}
+
+footer {
+  margin-top: auto;
+}
+	 footer {
+      text-align: center;
+      padding: 3px;
+      font-size: 0.9em;
+      color: #888;
+      
+    }
