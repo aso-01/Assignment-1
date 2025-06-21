@@ -4,6 +4,44 @@
 	<meta charset="utf-8">
 	<title>Bender personal page</title>
 	<link rel="stylesheet" href="styles.css">
+	<style>
+
+	.bg-image {
+  height: 100vh; /* Full screen height */
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  
+  /* Center and scale the image nicely */
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+/* Images used */
+.img1 { background-image: url("smoking-bender.jpg"); }
+.img2 { background-image: url("Planet-Express-futurama.jpg"); }
+.img3 { background-image: url("bender-crew.jpg"); }
+.img4 { background-image: url("Bender&fry.jpg"); }
+.img5 { background-image: url("bender-futurama.jpg"); }
+
+.bg-text {
+  background-color: rgb(0,0,0); /* Fallback color */
+  background-color: rgba(0,0,0, 0.4); /* Black w/opacity/see-through */
+  color: white;
+  font-weight: bold;
+  font-size: 80px;
+  border: 10px solid #f1f1f1;
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  z-index: 2;
+  width: 300px;
+  padding: 20px;
+  text-align: center;
+}
+</style>
 </head>
 <body>
 <ul>
@@ -12,15 +50,17 @@
 	<li><a href="resume.html">Resume</a></li>
 	<li><a href="projects.html">Projects</a></li> 
 	<li><a href="404 HTML Template.html">Blog</a></li> 
-	<li><a href="Contact.html">Contact</a></li> 
+	<li><a href="contact.html">Contact</a></li> 
 </ul>
-<h1 id="txt_style">Welcome to the space of Bender Bending Rodriguez</h1>
 <div class="pos_cen">
-<img class="img_deg" src="Bender.jpg" alt="picture of Bender">
-<p>Bender Bending Rodríguez is one of the main characters in the animated television series Futurama. He was conceived by the series' creators Matt Groening and David X. Cohen, and is voiced by John DiMaggio. He fulfills a comic, antihero-type role in the show, and is described by fellow character Leela as an "alcoholic, whore-mongering, chain-smoking gambler". According to the character's backstory, 
-Bender was built in Tijuana, Mexico,
- his name a reference to bending in Mexican maquiladoras</p>
- </div>
+<div class="bg-image img1"></div>
+<div class="bg-image img2"></div>
+<div class="bg-image img3"></div>
+<div class="bg-image img4"></div>
+<div class="bg-image img5"></div>
+
+<div class="bg-text">Welcome to Bender fan site</div>
+</div>
   <footer>
     &copy; 3025 Planet Express. All rights reserved.
  </footer>
