@@ -120,10 +120,14 @@ input[type=submit]:hover {
   color: white;
 }
 
-body.dark {background-color: #292c35;} /* #9b59b6 */
+body.dark {
+  background-color: #292c35;
+  color: white;  
+} /* #9b59b6 */
+
 
 div.a {
-  position: fixed;
+  position: fixed ;
   left: 20px;
   top: 9%;
 }
