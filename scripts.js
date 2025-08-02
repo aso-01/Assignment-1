@@ -18,10 +18,17 @@ document.addEventListener('DOMContentLoaded', function() {
 	.then(response => response.json())
 	.then(posts => {
 		posts.forEach(post => {
+        console.log(post); // For debugging
+
 		const postElement = document.createElement('div');
-		// manipulate postElement to show the content of the blog post with the specific style defined for it
-		//add postElement as a child to blog list
-		console.log(post)
+		
+		postElement.innerHTML = `
+        <h2>${post.title}</h2>
+        <p>${post.content}</p>
+       `;
+         blogList.appendChild(postElement);
+
+	
 		});
 	})
 	.catch(error => console.error('Error loading blog posts:', error));

@@ -1,0 +1,5 @@
+const arr = [
+  {id: 1, name: 'Alice', age: 29},
+  {id: 2, name: 'Bobby Hadz', age: 30},
+  {id: 3, name: 'Carl', age: 31},
+];
