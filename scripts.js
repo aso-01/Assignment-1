@@ -26,10 +26,40 @@ document.addEventListener('DOMContentLoaded', function() {
         <h2>${post.title}</h2>
         <p>${post.content}</p>
        `;
-         blogList.appendChild(postElement);
-
-	
+         blogList.appendChild(postElement);	
 		});
 	})
 	.catch(error => console.error('Error loading blog posts:', error));
+});
+
+document.addEventListener('DOMContentLoaded', function() {
+ fetch('./footer.html')
+      .then(response => {
+        if (!response.ok) throw new Error("Network response was not ok");
+        return response.text();
+      })
+      .then(data => {
+        document.getElementById('footer-placeholder').innerHTML = data;
+      })
+      .catch(error => {
+        console.error('Error loading the footer:', error);
+      });
+});
+
+document.addEventListener('DOMContentLoaded', function() {
+ fetch('./header-style.html')
+      .then(response => {
+        if (!response.ok) throw new Error("Network response was not ok");
+        return response.text();
+      })
+      .then(data => {
+        const h1 = document.getElementById('txt_style');
+		const className = data.trim();  // Trim whitespace/newlines from fetched data
+        if (h1 && className) {
+           h1.classList.add(className);
+		}
+      })
+      .catch(error => {
+        console.error('Error loading the footer:', error);
+      });
 });
