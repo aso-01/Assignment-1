@@ -8,6 +8,17 @@
   "title": "This is a draft for anohter post",
   "content": "Space stored for added info"
   
+},
+{
+  "title": "How to make a responsive theme button using JavaScript?",
+  "content": "To make a button work on any html page we need the following:<br><br>First, we need to create a function inside a javascript file that will identify the contents of the button itself in this case dark or light theme. Based on said logic, the button will determine what color the background of the html page should be. This can be accomplished by an If statement where we verify the label of the button value and set their respective value. <br><br>Second, on the main html page we add the toggle button by two additional steps. First, we include an element class button with function that will be called once onClick is trigger. The last step is to add the script into the page by invoke script tag at the end of the main html page."
+},
+
+{
+  "title": "How to make JavaScript Load this file dynamically using a json file?",
+  "content": "For this section of the assignment we require 3 different files with their respective function: <br><br> <b>Blog.html:</b> This file will be the placeholder containing the basic layout fo the entire site. The only element that we will add is a <em>div</em> element where all the information will be displayed.<br><br><b>post.json:</b> This file will contain all the information we aim to display dynamically on our blog.html page. Note that, all text added inside this file must follow JSON syntax rules as well as the order on which data is meant to be displayed. It is worth noting that few html elements can be added inside the text description to aid the appearance of the data. However, this can also be further customize using a proper css on the html page.<br><br><b>scripts.js</b> This file will link both files together to fetch the data from json into html page. There is a promise that gets generated once the page fully loads. Once the data is retrieve it will be displayed inside the div created previously with a a selection element by ID. Last the data will be added in a form of how it is populated on Json file. In this case title is set to be displayed as header element while content is set to be inside a p tag."
+  
 }
+
 
 ]
